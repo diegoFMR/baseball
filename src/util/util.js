@@ -1,4 +1,4 @@
-let host = 'http://localhost:4200';
+let host = 'https://master.d17zgtsvqhwk0b.amplifyapp.com:4200';
 
 const util = {
     API: {
