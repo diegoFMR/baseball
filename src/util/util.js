@@ -1,4 +1,4 @@
-let host = 'https://master.d17zgtsvqhwk0b.amplifyapp.com';
+let host = 'https://precious-hoodie-slug.cyclic.app';
 
 const util = {
     API: {
