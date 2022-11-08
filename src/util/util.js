@@ -12,7 +12,8 @@ const util = {
         GAME: {
             DELETE: `${host}/game/delete`,
             CREATE: `${host}/game/create`,
-            UPDATE: `${host}/game/update`
+            UPDATE: `${host}/game/update`,
+            FIND_BY_ID: `${host}/game/findById`
         },
         STADIUM: {
             LIST: `${host}/stadium/list`

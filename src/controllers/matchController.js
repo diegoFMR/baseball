@@ -65,7 +65,7 @@ const matchController = {
     let params = {team}
     try{
       return new Promise((resolve)=>{
-        fetch("http://localhost:4200/game/findById", {
+        fetch(util.API.GAME.FIND_BY_ID, {
           method: "post",
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(params)
