@@ -11,9 +11,6 @@ git clone https://github.com/diegoFMR/baseball.git
 cd baseball-website
 npm install
 ```
-## Configuration
-Modify the /util/util.js file with your API information
-<img src="./public/util-sc.png" alt="welcome" width="90%"/>
 
 ## Run 
 ```
