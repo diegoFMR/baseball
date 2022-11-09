@@ -31,4 +31,4 @@ npm start
 For testing porpuses!
 
 User: d@d.com 
-Password: password1234
+Password: password
