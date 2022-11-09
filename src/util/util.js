@@ -4,7 +4,7 @@ const util = {
     API: {
         USER: {
             FIND_USER: `${host}/user/findUser`,
-            
+            REGISTER: `${host}/user/register`
         },
         TEAM: {
             LIST: `${host}/team/list`

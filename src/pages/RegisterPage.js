@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import SelectTeam from '../components/SelectTeam';
+import util from '../util/util';
 
 //css
 import '../App.css';
@@ -29,7 +30,7 @@ function RegisterPage ({setUserProfile}) {
     }else{
       try{
         let params = {team, name, "email":emailRegister, "pwd":pwdRegister}
-        fetch("http://localhost:4200/user/register", {
+        fetch(util.API.USER.REGISTER, {
           method: "post",
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify(params)
