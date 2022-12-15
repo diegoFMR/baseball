@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import SelectTeam from '../components/SelectTeam';
 import SelectStadium from '../components/SelectStadium';
-// import DatePicker from 'react-datepicker';
+import DatePicker from 'react-datepicker';
 //controller
 import matchController from '../controllers/matchController';
 //css and icons
-// import "react-datepicker/dist/react-datepicker.css";
+import "react-datepicker/dist/react-datepicker.css";
 import { FiCalendar  } from 'react-icons/fi';
 import { GiBaseballBat  } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
@@ -26,9 +26,9 @@ function MatchForm ({user, _team, _stadium, _date, isLocal, _game, _ignoreId,onS
     setStadium(e.target.value);
   }
 
-  // function onChangeDate(date) {
-  //   setStartDate(date);
-  // }
+  function onChangeDate(date) {
+    setStartDate(date);
+  }
 
   function onChangeLocal({target}) {
     setLocal(target.checked);
@@ -69,13 +69,13 @@ function MatchForm ({user, _team, _stadium, _date, isLocal, _game, _ignoreId,onS
         <div className='match-form'>
           <div className='row'>
             <div className='icon-container'><FiCalendar/></div>
-            {/* <DatePicker
+            <DatePicker
               selected={startDate}
               onChange={onChangeDate}
               showTimeSelect
               minDate={new Date()}
               dateFormat="yyyy/MM/dd hh:mm"
-            /> */}
+            />
           </div>
         <div className='row'>
           <div className='icon-container'>
