@@ -6,6 +6,8 @@ import loginController from '../controllers/loginController';
 //icons
 import { BsShieldLockFill } from 'react-icons/bs';
 import { IoEnterOutline } from 'react-icons/io5';
+//components
+import Button from '../components/Button';
 
 function Login ({setUserProfile}) {
   let initialValues = {
@@ -75,6 +77,14 @@ function Login ({setUserProfile}) {
               </div>
 
               <div className='btn-container'>
+                <Button 
+                  type='submit' 
+                  classs='btn btn-confirm' 
+                  icon={IoEnterOutline}
+                  disabled={false} 
+                  type='submit' 
+                  onClick={()=>console.log('fired')}
+                  />
                 <button type='submit' className='btn btn-confirm'>
                   <IoEnterOutline/>
                 </button>

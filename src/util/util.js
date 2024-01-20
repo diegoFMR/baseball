@@ -1,4 +1,4 @@
-let host = 'https://precious-hoodie-slug.cyclic.app';
+let host = 'https://blush-catfish-gear.cyclic.app';
 
 const util = {
     API: {
